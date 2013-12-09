@@ -1,0 +1,29 @@
+{
+  "name": "persona-openid-delegation",
+  "version": "0.0.1",
+  "description": "Persona IdP that relies on an OpenID IdP",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fmarier/persona-openid-delegation"
+  },
+  "keywords": [
+    "persona",
+    "openid",
+    "browserid"
+  ],
+  "dependencies": {
+    "ejs": "0.8.x",
+    "express": "3.4.x",
+    "openid": "0.5.x"
+  },
+  "author": "Francois Marier <francois@mozilla.com>",
+  "license": "MPL2",
+  "bugs": {
+    "url": "https://github.com/fmarier/persona-openid-delegation/issues"
+  },
+  "homepage": "https://github.com/fmarier/persona-openid-delegation"
+}
