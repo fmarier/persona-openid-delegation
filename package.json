@@ -18,6 +18,7 @@
   "dependencies": {
     "ejs": "0.8.x",
     "express": "3.4.x",
+    "jwcrypto": "0.4.x",
     "openid": "0.5.x"
   },
   "author": "Francois Marier <francois@mozilla.com>",
