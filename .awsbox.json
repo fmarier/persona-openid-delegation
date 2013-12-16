@@ -1,0 +1,10 @@
+{
+  "processes": [
+    "./index.js"
+  ],
+  "env": {
+    "CANONICAL_URL": "https://browserid.fmarier.org",
+    "ISSUING_DOMAIN": "browserid.fmarier.org"
+  },
+  "ssl": "force"
+}
