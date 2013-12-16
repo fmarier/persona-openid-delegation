@@ -19,7 +19,8 @@ var app = express();
 app.configure(function(){
   app.set('views', __dirname + '/views');
   app.use(express.cookieParser());
-  app.use(express.session({ secret: SESSION_SECRET, cookie: { secure: true } }));
+  // TODO: use secure cookies
+  app.use(express.session({ secret: SESSION_SECRET, cookie: { secure: false } }));
 
   app.use(function(req, res, next) {
     if (req.path === '/.well-known/browserid') {
