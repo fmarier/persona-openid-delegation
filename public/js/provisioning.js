@@ -2,7 +2,6 @@ navigator.id.beginProvisioning(function(email, cert_duration) {
   $.get('/api/loggedin')
     .success(function(r) {
       navigator.id.genKeyPair(function(pubkey) {
-        // TODO: find out whether or not this is needed
         if (typeof(pubkey) == "string") {
           pubkey = JSON.parse(pubkey);
         }
