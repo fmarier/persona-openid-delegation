@@ -80,7 +80,7 @@ app.get('/api/openid_verify', function (req, res) {
     } else if (result.authenticated === true &&
               result.claimedIdentifier === OPENID_IDENTIFIER) {
       req.session.loggedin = true;
-      res.redirect('/');
+      res.render('openid_verify.ejs');
     } else {
       req.session.loggedin = false;
       res.end('Authentication failed');
